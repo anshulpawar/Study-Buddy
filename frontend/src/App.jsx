@@ -22,7 +22,7 @@ function App() {
     setStudyData(null);
 
     try {
-      const response = await axios.post(`http://localhost:3001/api/generate`, {
+      const response = await axios.post(`/api/generate`, {
         topic: topic,
       });
       setStudyData(response.data.data);
